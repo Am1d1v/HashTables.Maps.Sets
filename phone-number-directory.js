@@ -13,7 +13,7 @@ function phoneNumberDirectory(phoneNumbers) {
         phoneContacts.set(name, phoneNumber);
     }
 
-    console.log(phoneContacts);
+    return phoneContacts
 }
 
     // Phone Contacs Array
@@ -22,9 +22,6 @@ const phoneNumbers = [
     'Jane:987-654-3210',
     'Joe:555-555-5555',
   ];
-
-phoneNumberDirectory(phoneNumbers);  
-
 
 
 module.exports = phoneNumberDirectory;
