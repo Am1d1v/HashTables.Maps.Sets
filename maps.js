@@ -6,7 +6,7 @@ const namedMap = new Map([
     [2, 'Anna'],
     [3, 'Jill']
 ]);
-//console.log(namedMap);
+
 
 
 const myFN = () => {
@@ -25,4 +25,25 @@ const map2 = new Map([
     [myFN, 'myFn'],
     [myObj, 'myObj']
 ]);
-console.log(map2);
+
+
+// Get valueas
+//console.log(map2.get(myFN));
+
+
+// Set Values
+map2.set(2, 'number two');
+//console.log(map2);
+
+namedMap.set(4, 'Sara');
+//console.log(namedMap);
+
+
+// Check Values
+console.log(namedMap.has(4));
+console.log(namedMap.has(10));
+
+
+// Remove Values
+namedMap.delete(4);
+console.log(namedMap);
